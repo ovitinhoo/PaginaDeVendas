@@ -1,0 +1,1 @@
+var tempoInicial=15,tempoRestante=60*tempoInicial,temporizador=setInterval(function(){var e=Math.floor(tempoRestante/60),t=(t=tempoRestante%60)<10?"0"+t:t;document.getElementById("tempo_restante").innerHTML=e+":"+t,tempoRestante<=0&&(clearInterval(temporizador),document.getElementById("tempo_restante").innerHTML="Tempo esgotado!"),tempoRestante--},1e3);  
